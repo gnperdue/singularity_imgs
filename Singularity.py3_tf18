@@ -33,8 +33,8 @@ Version ubuntu16.04-py3-tf18-gpu
     apt-get -y install dpkg-dev g++ gcc binutils libqt4-dev python3-dev python3-tk python3-pip
 
     # pip basics
-    pip3 --no-cache-dir install --upgrade pip
-    hash -d pip3
-    pip3 --no-cache-dir install --upgrade setuptools
-    pip3 --no-cache-dir install numpy wheel zmq six pyyaml cython gputil psutil humanize h5py tqdm
-    pip3 --no-cache-dir install matplotlib pandas scikit-image scikit-learn Pillow
+    python -m pip install --force-resintall pip
+    hash -d pip
+    pip --no-cache-dir install --upgrade setuptools
+    pip --no-cache-dir install numpy wheel zmq six pyyaml cython gputil psutil humanize h5py tqdm
+    pip --no-cache-dir install matplotlib pandas scikit-image scikit-learn Pillow
