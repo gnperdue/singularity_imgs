@@ -31,6 +31,8 @@ Version ubuntu16.04-py2-tf17-gpu
 
 %post
 
+    mkdir /scratch /data
+
     # apt-get
     apt-get -y update
     apt-get -y install dpkg-dev g++ gcc binutils libqt4-dev python-dev python-tk python-pip
