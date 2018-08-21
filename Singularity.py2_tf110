@@ -39,7 +39,7 @@ Version ubuntu16.04-py2-tf110-gpu
 
     # pip basics
     # pip --no-cache-dir --disable-pip-version-check install --upgrade 'pip<=9.0.3'
-    pip --no-cache-dir --disable-pip-version-check install --upgrade pip
+    # pip --no-cache-dir --disable-pip-version-check install --upgrade pip
     pip --no-cache-dir --disable-pip-version-check install --upgrade setuptools 
     pip --no-cache-dir --disable-pip-version-check install numpy wheel zmq six pygments pyyaml cython gputil psutil humanize h5py tqdm
     pip --no-cache-dir --disable-pip-version-check install matplotlib pandas scikit-image scikit-learn Pillow
