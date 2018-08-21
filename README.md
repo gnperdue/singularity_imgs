@@ -5,3 +5,7 @@ Singularity containers (with inspiration from J. Simone, [T. Golan](https://gith
 ## Usage
 
 * Pull, e.g. `$ singularity pull shub://gnperdue/singularity_imgs:py2_tf17`
+
+## Notes
+
+* `Singularity.py2_tf110` - See [TF](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/Dockerfile.devel-gpu) for base package definition.
