@@ -43,5 +43,6 @@ Version ubuntu16.04-py2-tf110-gpu
     # pip --no-cache-dir --disable-pip-version-check install numpy wheel zmq six pygments pyyaml cython gputil psutil humanize h5py tqdm
     # pip --no-cache-dir --disable-pip-version-check install matplotlib pandas scikit-image scikit-learn Pillow
 
-    python -m pip install --upgrade setuptools pip
+    python -m pip install --upgrade pip
+    python -m pip install --upgrade setuptools
     python -m pip install h5py
