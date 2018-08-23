@@ -1,11 +1,7 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:1.10.0-devel-gpu-py3
+From: nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 
 %help
-Ubuntu16.04 with cuda9 cudnn7
-ML/DL packages  : tensorflow
-Basic python    : h5py
-
 To start your container simply try
 singularity exec THIS_CONTAINER.simg bash
 
@@ -22,7 +18,6 @@ Version ubuntu16.04-py3-tf18-gpu
 # Global installation
 #------------
 %environment
-    # for system
     export XDG_RUNTIME_DIR=/tmp/$USER
     export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/lib64/stubs:${LD_LIBRARY_PATH}
     export CUDA_DEVICE_ORDER=PCI_BUS_ID
@@ -30,13 +25,9 @@ Version ubuntu16.04-py3-tf18-gpu
 %post
     # apt-get
     apt-get -y update
-    # apt-get -y install dpkg-dev g++ gcc binutils libqt4-dev python3-dev python3-tk
+    apt-get -y install dpkg-dev g++ gcc binutils libqt4-dev python3-dev python3-tk python3-pip
 
-    # pip basics
-    # pip3 --no-cache-dir --disable-pip-version-check install --upgrade 'pip<=9.0.3'
-    # pip3 --no-cache-dir --disable-pip-version-check install --upgrade pip
-    # pip3 --no-cache-dir --disable-pip-version-check install --upgrade setuptools
-    # pip3 --no-cache-dir install numpy wheel zmq six pyyaml cython gputil psutil humanize h5py tqdm
-    # pip3 --no-cache-dir install matplotlib pandas scikit-image scikit-learn Pillow
-
-    pip3 --no-cache-dir install h5py
+    # pip
+    python3 -m pip install --upgrade setuptools pip
+    python3 -m pip install tensorflow-gpu==1.10.0
+    python3 -m pip install h5py
