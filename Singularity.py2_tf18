@@ -12,7 +12,7 @@ Container based on recipe by drinkingkazu
 
 %labels
 Maintainer gnperdue
-Version ubuntu16.04-py3-tf18-gpu
+Version ubuntu16.04-py2-tf18-gpu
 
 #------------
 # Global installation
