@@ -32,4 +32,4 @@ Version ubuntu16.04-py3-trch041
 
     # pip
     python3 -m pip install torch torchvision
-    python3 -m pip install h5py
+    python3 -m pip install h5py matplotlib pandas scikit-image scikit-learn Pillow tqdm
