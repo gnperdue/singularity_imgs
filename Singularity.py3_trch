@@ -31,5 +31,6 @@ Version ubuntu16.04-py3-trch041
     apt-get -y install dpkg-dev g++ gcc binutils libqt4-dev python3-dev python3-tk python3-pip
 
     # pip
+    python3 -m pip install --upgrade setuptools pip
     python3 -m pip install fastai torch torchvision
     python3 -m pip install h5py matplotlib pandas pytables scikit-image scikit-learn Pillow tqdm
