@@ -32,9 +32,9 @@ Version ubuntu16.04-py3-trch041
 
     # pip
     python3 -m pip install --upgrade setuptools pip
-    python3 -m pip install torch torchvision
+#    python3 -m pip install torch torchvision
 #    python3 -m pip install h5py matplotlib pandas scikit-image scikit-learn Pillow tqdm
-#    python3 -m pip install 'fastai2>=0.0.11'
+    python3 -m pip install 'fastai2>=0.0.11'
 #    python3 -m pip install graphviz
 #    python3 -m pip install ipywidgets
 #    python3 -m pip install matplotlib
