@@ -12,7 +12,7 @@ Container based on recipe by drinkingkazu
 
 %labels
 Maintainer gnperdue
-Version ubuntu16.04-py3-trch041
+Version ubuntu16.04-py3-trch
 
 #------------
 # Global installation
