@@ -32,5 +32,5 @@ Version ubuntu16.04-py3-dmda
 
     # pip
     python3 -m pip install --upgrade setuptools pip
-    python3 -m pip install torch torchvision
+    python3 -m pip install torch==1.4.0+cu92 torchvision==0.5.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
     python3 -m pip install numpy matplotlib mlxtend tensorboard tensorboardX notebook ipython scikit-learn
